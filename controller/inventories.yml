@@ -1,0 +1,8 @@
+---
+# Commented out content is serving as example for you to add new content.
+controller_inventories:
+  - name: customer-x-web
+    description: inventory for localhost
+  - name: customer-x-awx
+    description: Linux servers on AWX
+...
