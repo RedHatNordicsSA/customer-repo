@@ -1,4 +1,5 @@
 ---
+controller_templates:
   - name: Check if web frontend is alive
     description: Login to rhel8c and see if a command returns output
     job_type: run
