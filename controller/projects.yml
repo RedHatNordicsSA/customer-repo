@@ -5,7 +5,9 @@ controller_projects:
     scm_url: https://github.com/RedHatNordicsSA/customer-x-playbooks
     scm_branch: main
     scm_clean: true
-    description: The Linux team's playbooks
+    scm_delete_on_update: true
+    scm_update_on_launch: true
+    description: Web team playbooks
     wait: true
     update: true
 ...
