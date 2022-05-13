@@ -1,0 +1,10 @@
+---
+  - name: Check if web frontend is alive
+    description: Login to rhel8c and see if a command returns output
+    job_type: run
+    inventory: customer x web
+    credentials: webadmin
+    project: Customer X web playbooks
+    playbook: ping.yml
+    verbosity: 0
+...
