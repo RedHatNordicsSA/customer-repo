@@ -3,3 +3,6 @@ controller_roles:
 - team: testteam
   job_template: 'Check if web frontend is alive'
   role: execute
+- team: readteam
+  job_template: 'Check if web frontend is alive'
+  role: execute
