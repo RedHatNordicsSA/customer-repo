@@ -1,0 +1,5 @@
+---
+controller_roles:
+- user: testuser
+  job_template: 'Check if web frontend is alive'
+  role: execute
