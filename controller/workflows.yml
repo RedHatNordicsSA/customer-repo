@@ -7,6 +7,7 @@ controller_workflows:
     ask_inventory_on_launch: false
     ask_scm_branch_on_launch: false
     ask_limit_on_launch: false
+    credentials: webadmin
     organization: customer-x
     simplified_workflow_nodes:
       - all_parents_must_converge: false
