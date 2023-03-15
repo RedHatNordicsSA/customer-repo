@@ -8,4 +8,12 @@ controller_templates:
     project: Customer X web playbooks
     playbook: ping.yml
     verbosity: 0
+  - name: Other check if web frontend
+    description: Login to rhel8c and see if a command returns output
+    job_type: run
+    inventory: customer x web
+    credentials: webadmin
+    project: Customer X web playbooks
+    playbook: ping.yml
+    verbosity: 0
 ...
