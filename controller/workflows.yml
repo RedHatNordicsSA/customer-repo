@@ -29,14 +29,7 @@ controller_workflows:
         approval_node:
           name: Simple approval node name
           description: Approve this to proceed in workflow
-          timeout: 900 # 15 minutes
-      - all_parents_must_converge: false
-        identifier: node301
-        unified_job_template: Other check if web frontend
-        credentials: []
-        success_nodes: []
-        failure_nodes: []
-        always_nodes: []
+          timeout: 900
     notification_templates_started: []
     notification_templates_success: []
     notification_templates_error: []
