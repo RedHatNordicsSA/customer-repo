@@ -16,12 +16,12 @@ controller_workflows:
     webhook_credential:
     organization: customer-x
     schedules: []
+    state: present
     simplified_workflow_nodes:
       - all_parents_must_converge: false
         identifier: node101
         unified_job_template: Check if web frontend is alive
         credentials: []
-        state: present
         success_nodes:
           - node201
         failure_nodes: []
