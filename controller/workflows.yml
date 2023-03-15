@@ -14,5 +14,3 @@ controller_workflows:
         unified_job_template: Check if web frontend is alive
         success_nodes:
           - Check if web frontend is alive
-        failure_nodes:
-          - Approval_to_Trigger
