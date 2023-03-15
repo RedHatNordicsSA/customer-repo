@@ -21,6 +21,7 @@ controller_workflows:
         identifier: node101
         unified_job_template: Check if web frontend is alive
         credentials: []
+        state: present
         success_nodes:
           - node201
         failure_nodes: []
