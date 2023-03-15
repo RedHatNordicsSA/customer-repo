@@ -22,6 +22,7 @@ controller_workflows:
         credentials: []
         unified_job_template: Other check if web frontend
       - identifier: approval_task
+        credentials: []
         approval_node:
             name: approval_task
             description: For testing approval process
