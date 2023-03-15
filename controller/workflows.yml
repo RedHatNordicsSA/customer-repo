@@ -10,9 +10,16 @@ controller_workflows:
     organization: customer-x
     simplified_workflow_nodes:
       - all_parents_must_converge: false
-        identifier: Check if web frontend is alive
+        identifier: First_Job
         unified_job_template: Check if web frontend is alive
         success_nodes:
-          - Check if web frontend is alive
+          - approval_task
         failure_nodes:
-          - Other check if web frontend
+          - Second_Job
+      - all_parents_must_converge: false
+        identifier: Second_Job
+        unified_job_template: Other check if web frontend
+      - identifier: approval_task
+        approval_node:
+            name: approval_task
+            description: For testing approval process
