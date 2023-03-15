@@ -1,5 +1,6 @@
 ---
-- name: Workflow_with_approval
+controller_workflows:
+  - name: Workflow_with_approval
     allow_simultaneous: false
     ask_variables_on_launch: false
     state: present
