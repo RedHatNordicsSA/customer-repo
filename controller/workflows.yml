@@ -1,0 +1,17 @@
+---
+- name: Workflow_with_approval
+    allow_simultaneous: false
+    ask_variables_on_launch: false
+    state: present
+    ask_inventory_on_launch: false
+    ask_scm_branch_on_launch: false
+    ask_limit_on_launch: false
+    organization: customer-x
+    simplified_workflow_nodes:
+      - all_parents_must_converge: false
+        identifier: Check if web frontend is alive
+        unified_job_template: Check if web frontend is alive
+        success_nodes:
+          - Check if web frontend is alive
+        failure_nodes:
+          - Approval_to_Trigger
